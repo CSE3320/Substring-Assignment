@@ -100,5 +100,15 @@ int main(int argc, char *argv[])
     printf ("The number of substrings is : %d\n" , count) ;
     printf ("Elapsed time is : %f milliseconds\n", mtime );
 
+    if( s1 )
+    {
+      free( s1 );
+    }
+
+    if( s2 )
+    {
+      free( s2 );
+    }
+
     return 0 ; 
 }
